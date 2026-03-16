@@ -1,14 +1,153 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My AWS Project</title>
+
+<title>AWS S3 Static Website Hosting Project</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f6f9;
+}
+
+header{
+background:#232f3e;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#37475a;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:40px;
+max-width:900px;
+margin:auto;
+}
+
+h2{
+color:#232f3e;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#232f3e;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+</style>
+
 </head>
 
-<body style="text-align:center;margin-top:100px;font-family:Arial">
+<body>
 
+<header>
 <h1>Amazon S3 Static Website Hosting</h1>
-<p>This website is for my AWS project.</p>
-<p>Created by Lamu Sree</p>
+<p>AWS Cloud Project</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">AWS Services</a>
+<a href="#architecture">Architecture</a>
+<a href="#conclusion">Conclusion</a>
+</nav>
+
+<section id="about">
+
+<div class="card">
+<h2>Project Overview</h2>
+<p>
+This project demonstrates how to host a static website using Amazon S3.
+Amazon S3 provides scalable, secure, and highly available storage which
+can also be used to host static web applications.
+</p>
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="card">
+<h2>AWS Services Used</h2>
+
+<ul>
+<li><b>Amazon S3</b> – Used to store and host static website files.</li>
+<li><b>Amazon Route 53</b> – Used to manage DNS and custom domain names.</li>
+<li><b>AWS Cloud</b> – Provides scalable and reliable cloud infrastructure.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="architecture">
+
+<div class="card">
+
+<h2>Project Architecture</h2>
+
+<p>
+User accesses the website through a browser. The domain name is managed
+by Route 53 which directs the request to the Amazon S3 bucket hosting
+the static website files.
+</p>
+
+<p>
+
+User Browser → Route53 → Amazon S3 → Static Website
+
+</p>
+
+</div>
+
+</section>
+
+<section id="conclusion">
+
+<div class="card">
+
+<h2>Conclusion</h2>
+
+<p>
+Amazon S3 static website hosting provides a simple and cost-effective
+way to deploy websites in the cloud. It ensures high availability,
+scalability, and easy management.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Created by Lamu Sree | AWS Project</p>
+
+</footer>
 
 </body>
 </html>
